@@ -1,4 +1,4 @@
-# Credit Card Approval Prediction
+<img width="933" height="555" alt="image" src="https://github.com/user-attachments/assets/049861fd-f83b-4f1f-9934-5ea51308d341" /># Credit Card Approval Prediction
 
 ## About the Project
 
@@ -41,6 +41,9 @@ The project uses two datasets:
 
 - application_record.csv
 - credit_record.csv
+
+- You can download the dataset using this link - https://drive.google.com/drive/folders/1g_kOdaiKutTYBqW0nZrsmSvrNaV0uRjt?usp=sharing
+
 
 These datasets contain customer information and credit history used for training the machine learning model.
 
