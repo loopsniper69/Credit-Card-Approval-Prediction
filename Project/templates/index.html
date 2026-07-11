@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="home-container">
+
+    <!-- Left Section -->
+    <div class="home-left">
+        <img src="{{ url_for('static', filename='images/undraw_credit-card_t6qm.svg') }}" alt="Credit Card">
+    </div>
+
+    <!-- Right Section -->
+    <div class="home-right">
+
+        <h1>CreditAI</h1>
+
+<p class="subtitle">
+Smart Credit Decisions with Machine Learning
+</p>
+
+        <p class="subtitle">
+            Secure • Fast • Machine Learning Powered
+        </p>
+
+        <div class="info-box">
+            ✔ Secure Prediction <br>
+            ✔ Random Forest Algorithm <br>
+            ✔ Fast Credit Decision
+        </div>
+<form action="/result" method="POST">
+
+<label>Gender</label>
+<select name="gender" required>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+
+<label>Annual Income</label>
+<input type="number" name="income" placeholder="Enter Annual Income" required>
+
+<label>Employment Status</label>
+<select name="employment" required>
+    <option value="Working">Working</option>
+    <option value="Commercial Associate">Commercial Associate</option>
+    <option value="Pensioner">Pensioner</option>
+    <option value="Student">Student</option>
+</select>
+
+<label>Education</label>
+<select name="education" required>
+    <option value="Secondary">Secondary</option>
+    <option value="Higher Education">Higher Education</option>
+    <option value="Incomplete Higher">Incomplete Higher</option>
+    <option value="Academic Degree">Academic Degree</option>
+</select>
+
+<label>Own House</label>
+<select name="house" required>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+</select>
+
+<button type="submit">
+    Predict Approval
+</button>
+
+</form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

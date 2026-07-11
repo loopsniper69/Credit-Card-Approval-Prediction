@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<h1>💳 CreditAI</h1>
+
+<p class="subtitle">
+Machine Learning Credit Approval System
+</p>
+
+<p>
+Welcome to <strong>CreditAI</strong>. This application predicts whether a customer
+is likely to receive credit card approval using a trained Random Forest
+Machine Learning model.
+</p>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="home-container">
+
+    <div class="home-left">
+
+        <img src="{{ url_for('static', filename='images/undraw_credit-card_t6qm.svg') }}" alt="Credit Card">
+
+    </div>
+
+    <div class="home-right">
+
+        <h1>💳 CreditAI</h1>
+
+        <p class="subtitle">
+            Machine Learning Credit Approval System
+        </p>
+
+        <p>
+            Welcome to <strong>CreditAI</strong>, a Machine Learning based Credit Card
+            Approval Prediction System. Enter customer information and receive
+            an instant approval prediction using our trained Random Forest model.
+        </p>
+
+        <a href="/predict" class="start-btn">
+            <button>Start Prediction</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

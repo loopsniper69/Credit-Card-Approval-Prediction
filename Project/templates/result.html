@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CreditAI | Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        💳 CreditAI
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/predict">Prediction</a></li>
+    </ul>
+
+</nav>
+
+<div class="home-container">
+
+    <div class="home-left">
+
+        <img src="{{ url_for('static', filename='images/undraw_credit-card_t6qm.svg') }}" alt="Credit Card">
+
+    </div>
+
+    <div class="home-right">
+
+        <span class="badge">
+            CreditAI Analysis Complete
+        </span>
+
+        <h1>CreditAI</h1>
+
+        <p class="subtitle">
+            Smart Credit Decisions with Machine Learning
+        </p>
+
+        <div class="result-card">
+
+            <h2>{{ prediction }}</h2>
+
+            <p>
+                Based on the customer information you provided,
+                our Machine Learning model has successfully analyzed
+                the application and generated the above prediction.
+            </p>
+
+        </div>
+
+        <a href="/" class="start-btn">
+            <button>🏠 Back to Home</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
